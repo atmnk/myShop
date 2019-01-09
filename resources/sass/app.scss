@@ -1,0 +1,298 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+nav{
+  position: -webkit-sticky !important;
+  background-color: brown !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000;
+}
+.navbar-brand{
+  font-size: 2em; font-weight: bold; color: whitesmoke !important;
+}
+.nav-link{
+  color: whitesmoke !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  border-color: rgb(245,245,245) !important;
+}
+//Page
+.page-title{
+  margin: 5px 5px;
+  background-color: inherit;
+  color: black;
+}
+.page{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  padding-top: 2px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.content-wrap{
+  margin: 0px 5%;
+  @media screen and (max-width: $ld-device) {
+    margin: 0px 0px;
+  }
+  @media screen and (max-width: $md-device) {
+    margin: 0px 0px;
+  }
+  @media screen and (max-width: $sm-device) {
+    margin: 0px 0px;
+  }
+}
+.content{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+// Form
+.vForm{
+   padding: 0.6em 0.6em 0.6em 0.6em;
+   border: 1px solid brown;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background-color:lightyellow;
+ }
+.bForm{
+  display: inline-block;
+}
+.form-title{
+  margin: 5px 5px;
+  font-family: avenirnextbold;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.product-card{
+  overflow: auto;
+}
+
+.vForm input,.vForm textarea{
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid grey;
+  width: 100%;
+}
+.vForm input[type=file]{
+  padding-left: 0em;
+  padding-right: 1em;
+  border: none;
+}
+.vForm button{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.submit-button{
+  font-size: 16px;
+  padding: 12px;
+  font-family: AvenirNextMedium;
+  text-transform: capitalize;
+  background: green;
+  color: white;
+  line-height: 1;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: auto;
+}
+.delete-button{
+  font-size: 16px;
+  padding: 12px;
+  font-family: AvenirNextMedium;
+  text-transform: capitalize;
+  background: red;
+  color: white;
+  line-height: 1;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: auto;
+}
+textarea{
+  resize: none;
+  width: 100%;
+  height: auto;
+}
+.has-error input,.has-error textarea{
+  border: 1px solid red !important;
+}
+//Projects List
+.items{
+  height: auto !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.product-card-wrap{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1% 1% 1% 1%;
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  @media screen and (max-width: $ld-device) {
+    width: calc(33% - 2px);
+  }
+  @media screen and (max-width: $md-device) {
+    width: calc(33% - 2px);
+  }
+  @media screen and (max-width: $sm-device) {
+    width: 50%;
+  }
+}
+.product-card{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #979797;
+  border-radius: 0.5em;
+
+}
+//Product
+.product-image-holder{
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+.product-title{
+  position: relative;
+  display: flex;
+  padding: 10px 15px;
+}
+.product-desc{
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+}
+.imageblock{
+  position: relative;
+  display: block;
+}
+.add{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0.6em 0.6em 0.6em 0.6em;
+}
+
+.product-details{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70%;
+  display: inline-block;
+  @media screen and (max-width: $ld-device) {
+    width: 70%;
+  }
+  @media screen and (max-width: $md-device) {
+    width: 100%;
+  }
+  @media screen and (max-width: $sm-device) {
+    width: 100%;
+  }
+
+}
+.contact-details{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70%;
+  display: inline-block;
+  @media screen and (max-width: $ld-device) {
+    width: 70%;
+  }
+  @media screen and (max-width: $md-device) {
+    width: 100%;
+  }
+  @media screen and (max-width: $sm-device) {
+    width: 100%;
+  }
+}
+.enquiry{
+  position: sticky;
+  top: 65px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 29.5%;
+  display: inline-block;
+  vertical-align: top;
+  @media screen and (max-width: $ld-device) {
+    width: 29.5%;
+  }
+  @media screen and (max-width: $md-device) {
+    width: 100%;
+  }
+  @media screen and (max-width: $sm-device) {
+    width: 100%;
+  }
+}
+
+.enquiry-section{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6em 0.6em 0.6em 0.6em;
+}
+.field-container{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  position: relative;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+}
+
+.upload{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.map-container{
+  margin: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40vw; width: 60vw;
+  @media screen and (max-width: $ld-device) {
+    height: 40vw; width: 65vw;
+  }
+  @media screen and (max-width: $md-device) {
+    height: 70vw; width: 95vw;
+  }
+  @media screen and (max-width: $sm-device) {
+    height: 70vw; width: 95vw;
+  }
+}

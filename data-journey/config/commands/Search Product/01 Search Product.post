@@ -1,0 +1,5 @@
+${BaseUrl}/api/product/search
+Body={ "brand" : 2,"category":1,"sub_category":1}
+RequestHeader={}
+Response=
+ResponseHeader={}
