@@ -38,7 +38,7 @@
         methods:{
             buy(){
                 localStorage.setItem('current',JSON.stringify(this.currentVariant));
-                this.$router.push({ name: 'SignIn' })
+                this.$router.push({ name: 'Shipping' })
 
             },
             read(){

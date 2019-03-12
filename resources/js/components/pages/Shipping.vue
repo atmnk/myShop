@@ -2,7 +2,7 @@
     <div>
         <div style="display: flex;">
             <div style="width: 49%" class="vForm">
-                <span><b>Checkout:</b>Shipping Address</span>
+                <span><b>Checkout:&nbsp</b>Shipping Details</span>
                 <div>
                     <div>Country</div>
                     <div>
@@ -12,43 +12,14 @@
                     </div>
                 </div>
                 <div>
-                    <div style="display: inline-block">
+                    <div style="display: inline-block;width:49%;">
                         <div>First Name</div>
                         <div><input name="firstName"/></div>
                     </div>
-                    <div style="display: inline-block">
+                    <div style="display: inline-block;width:49%;">
                         <div>Last Name</div>
                         <div><input name="lastName"/></div>
                     </div>
-                </div>
-                <div>
-                    <div>Street Address</div>
-                    <div><input name="street"/></div>
-                </div>
-                <div>
-                    <div style="display: inline-block">
-                        <div>City</div>
-                        <div><input name="city"/></div>
-                    </div>
-                    <div style="display: inline-block">
-                        <div>State</div>
-                        <div><input name="state"/></div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>Zip</div>
-                    <div><input name="zip"/></div>
-                </div>
-
-                <div>
-                    <div>Phone</div>
-                    <div><input name="phone"/></div>
-                </div>
-
-                <div>
-                    <div>Email Address</div>
-                    <div><input name="email"/></div>
                 </div>
             </div>
             <div style="margin-left: auto;">
