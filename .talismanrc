@@ -2,3 +2,7 @@ fileignoreconfig:
 - filename: composer.lock
   checksum: c9fff87b184f8b3ffaafab1d62daa21d5dcafbf98a3a62ae0805737d544ac4e4
   ignore_detectors: []
+fileignoreconfig:
+- filename: composer.lock
+  checksum: 6ca2b2fc0ec9141a9e7ea1bad9cf27e857b10a1b0ef0cad50369cfa3966bcf8a
+  ignore_detectors: []
