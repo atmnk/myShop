@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: composer.lock
+  checksum: c9fff87b184f8b3ffaafab1d62daa21d5dcafbf98a3a62ae0805737d544ac4e4
+  ignore_detectors: []
