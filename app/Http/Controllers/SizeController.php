@@ -38,7 +38,7 @@ class SizeController extends Controller
         $name=$request->input('name');
         $product=$request->input('product');
         $size=new Size();
-        $size->Name=$name;
+        $size->name=$name;
         $size->product_id=$product;
         $size->save();
         return response($size->jsonSerialize(), Response::HTTP_OK);

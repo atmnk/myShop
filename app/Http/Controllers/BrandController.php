@@ -38,7 +38,7 @@ class BrandController extends Controller
     {
         $name=$request->input('name');
         $brand=new Brand();
-        $brand->Name=$name;
+        $brand->name=$name;
         $brand->save();
         return response($brand->jsonSerialize(), Response::HTTP_OK);
         //

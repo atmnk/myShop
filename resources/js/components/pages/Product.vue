@@ -1,19 +1,19 @@
 <template>
     <div style="width: 100%; box-sizing: border-box;">
         <div class="product">
-            <h4>{{obj.Name}}</h4>
+            <h4>{{obj.name}}</h4>
             <div class="product-gallery">
                 <span>Size </span>
                 <select v-model="sz" id="size">
-                    <option v-for="size in obj.sizes" v-bind:value="size.id">{{size.Name}}</option>
+                    <option v-for="size in obj.sizes" v-bind:value="size.id">{{size.name}}</option>
                 </select>
                 <span>Color </span>
                 <select v-model="cl" id="color">
-                    <option v-for="color in obj.colors" v-bind:value="color.id">{{color.Name}}</option>
+                    <option v-for="color in obj.colors" v-bind:value="color.id">{{color.name}}</option>
                 </select>
                 <span>Price </span><span id ="price">{{price}}</span>
                 <button :style="buyAvailable" v-on:click="buy" id="buyButton">Buy Now</button>
-                <div><img src="/img/1/1.jpeg" width="100%"></div>
+                <div><img v-bind:src="`https://picsum.photos/id/${obj.id}/300/200`" width="100%"></div>
             </div>
 
         </div>

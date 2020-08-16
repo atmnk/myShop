@@ -7,7 +7,7 @@
                     <div>Country</div>
                     <div>
                         <select v-model="country" id="country">
-                            <option v-for="country in countries" v-bind:value="country.Name" :id="country.id">{{country.Name}}</option>
+                            <option v-for="country in countries" v-bind:value="country.name" :id="country.id">{{country.name}}</option>
                         </select>
                     </div>
                 </div>
@@ -60,11 +60,11 @@
             countries(){
                 var countries=
                     [
-                        {"Name":"India","id":1},
-                        {"Name":"China","id":2},
-                        {"Name":"USA","id":3},
-                        {"Name":"UK","id":4},
-                        {"Name":"Germany","id":5},
+                        {"name":"India","id":1},
+                        {"name":"China","id":2},
+                        {"name":"USA","id":3},
+                        {"name":"UK","id":4},
+                        {"name":"Germany","id":5},
                     ];
                 return countries;
 

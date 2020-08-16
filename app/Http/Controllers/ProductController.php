@@ -57,8 +57,8 @@ class ProductController extends Controller
         $sc=$request->input('sc');
         $brand=$request->input('brand');
         $product=new Product();
-        $product->Name=$name;
-        $product->Desc=$desc;
+        $product->name=$name;
+        $product->desc=$desc;
         $product->sub_category_id=$sc;
         $product->brand_id=$brand;
         $product->save();

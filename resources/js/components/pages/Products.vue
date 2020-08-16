@@ -6,15 +6,15 @@
 
                 <span>Category </span><select v-model="category" id="filter-category">
                     <option value="NONE">All</option>
-                    <option v-for="cat in categories" v-bind:value="cat.id">{{cat.Name}}</option>
+                    <option v-for="cat in categories" v-bind:value="cat.id">{{cat.name}}</option>
                 </select>
                 <span>Sub Category </span><select v-model="subCategory" id="filter-subCategory">
                     <option value="NONE">All</option>
-                    <option v-for="scat in subCategories" v-bind:value="scat.id">{{scat.Name}}</option>
+                    <option v-for="scat in subCategories" v-bind:value="scat.id">{{scat.name}}</option>
                 </select>
                 <span>Brand </span><select v-model="brand" id="filter-brand">
                     <option value="NONE">All</option>
-                    <option v-for="brnd in brands" v-bind:value="brnd.id">{{brnd.Name}}</option>
+                    <option v-for="brnd in brands" v-bind:value="brnd.id">{{brnd.name}}</option>
                 </select>
                 <span>Search</span><input type="text" v-model="text" id="filter-text"/>
             </div>

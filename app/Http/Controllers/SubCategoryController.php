@@ -46,7 +46,7 @@ class SubCategoryController extends Controller
         $category=$request->input('category');
 
         $sub_category=new SubCategory();
-        $sub_category->Name=$name;
+        $sub_category->name=$name;
         Category::findOrFail($category)->subCategories()->save($sub_category);
         return response($sub_category->jsonSerialize(), Response::HTTP_OK);
         //

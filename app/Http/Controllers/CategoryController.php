@@ -38,7 +38,7 @@ class CategoryController extends Controller
     {
         $name=$request->input('name');
         $category=new Category();
-        $category->Name=$name;
+        $category->name=$name;
         $category->save();
         return response($category->jsonSerialize(), Response::HTTP_OK);
         //

@@ -38,7 +38,7 @@ class ColorController extends Controller
         $name=$request->input('name');
         $product=$request->input('product');
         $color=new Color();
-        $color->Name=$name;
+        $color->name=$name;
         $color->product_id=$product;
         $color->save();
         return response($color->jsonSerialize(), Response::HTTP_OK);
